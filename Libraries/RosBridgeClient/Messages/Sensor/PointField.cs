@@ -15,7 +15,7 @@ limitations under the License.
 
 using Newtonsoft.Json;
 
-namespace RosSharp.RosBridgeClient.Messages.Sensor
+namespace RosSharp.RosBridgeClient.Messages.sensor_msgs
 {
     public class PointField : Message
     {

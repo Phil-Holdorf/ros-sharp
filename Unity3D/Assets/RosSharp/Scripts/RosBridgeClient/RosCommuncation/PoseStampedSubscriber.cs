@@ -17,7 +17,7 @@ using UnityEngine;
 
 namespace RosSharp.RosBridgeClient
 {
-    public class PoseStampedSubscriber : Subscriber<Messages.Geometry.PoseStamped>
+    public class PoseStampedSubscriber : Subscriber<Messages.geometry_msgs.PoseStamped>
     {
         public Transform PublishedTransform;
 
@@ -36,7 +36,7 @@ namespace RosSharp.RosBridgeClient
                 ProcessMessage();
         }
 
-        protected override void ReceiveMessage(Messages.Geometry.PoseStamped message)
+        protected override void ReceiveMessage(Messages.geometry_msgs.PoseStamped message)
         {
             position = GetPosition(message).Ros2Unity();
             rotation = GetRotation(message).Ros2Unity();
@@ -49,7 +49,7 @@ namespace RosSharp.RosBridgeClient
             PublishedTransform.rotation = rotation;
         }
 
-        private Vector3 GetPosition(Messages.Geometry.PoseStamped message)
+        private Vector3 GetPosition(Messages.geometry_msgs.PoseStamped message)
         {
             return new Vector3(
                 message.pose.position.x,
@@ -57,7 +57,7 @@ namespace RosSharp.RosBridgeClient
                 message.pose.position.z);
         }
 
-        private Quaternion GetRotation(Messages.Geometry.PoseStamped message)
+        private Quaternion GetRotation(Messages.geometry_msgs.PoseStamped message)
         {
             return new Quaternion(
                 message.pose.orientation.x,

@@ -15,18 +15,18 @@ limitations under the License.
 
 using Newtonsoft.Json;
 
-namespace RosSharp.RosBridgeClient.Messages.Actionlib
+namespace RosSharp.RosBridgeClient.Messages.actionlib_msgs
 {
     public class GoalID : Message
     {
         [JsonIgnore]
         public const string RosMessageName = "actionlib_msgs/GoalID";
-        public Standard.Time stamp;
+        public std_msgs.Time stamp;
         public string id;
 
         public GoalID()
         {
-            stamp = new Standard.Time
+            stamp = new std_msgs.Time
             {
                 secs = 0,
                 nsecs = 0

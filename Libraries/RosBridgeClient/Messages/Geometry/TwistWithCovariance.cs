@@ -15,7 +15,7 @@ limitations under the License.
 
 using Newtonsoft.Json;
 
-namespace RosSharp.RosBridgeClient.Messages.Geometry
+namespace RosSharp.RosBridgeClient.Messages.geometry_msgs
 {
     public class TwistWithCovariance : Message
     {

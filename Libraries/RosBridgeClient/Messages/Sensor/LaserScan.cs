@@ -15,13 +15,13 @@ limitations under the License.
 
 using Newtonsoft.Json;
 
-namespace RosSharp.RosBridgeClient.Messages.Sensor
+namespace RosSharp.RosBridgeClient.Messages.sensor_msgs
 {
     public class LaserScan : Message
     {
         [JsonIgnore]
         public const string RosMessageName = "sensor_msgs/LaserScan";
-        public Standard.Header header;
+        public std_msgs.Header header;
         public float angle_min;
         public float angle_max;
         public float angle_increment;
@@ -33,7 +33,7 @@ namespace RosSharp.RosBridgeClient.Messages.Sensor
 
         public LaserScan()
         {
-            header = new Standard.Header();
+            header = new std_msgs.Header();
             angle_min = 0;
             angle_max = 0;
             angle_increment = 0;

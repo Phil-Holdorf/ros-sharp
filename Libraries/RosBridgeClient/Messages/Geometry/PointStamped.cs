@@ -15,17 +15,17 @@ limitations under the License.
 
 using Newtonsoft.Json;
 
-namespace RosSharp.RosBridgeClient.Messages.Geometry
+namespace RosSharp.RosBridgeClient.Messages.geometry_msgs
 {
     public class PointStamped : Message
     {
         [JsonIgnore]
         public const string RosMessageName = "geometry_msgs/PointStamped";
-        public Standard.Header header;
+        public std_msgs.Header header;
         public Point point;
         public PointStamped()
         {
-            header = new Standard.Header();
+            header = new std_msgs.Header();
             point = new Point();
         }
     }

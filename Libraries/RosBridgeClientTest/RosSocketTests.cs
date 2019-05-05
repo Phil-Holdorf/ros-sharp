@@ -16,8 +16,8 @@ limitations under the License.
 using System.Threading;
 using NUnit.Framework;
 using RosSharp.RosBridgeClient;
-using std_msgs = RosSharp.RosBridgeClient.Messages.Standard;
-using std_srvs = RosSharp.RosBridgeClient.Services.Standard;
+using std_msgs = RosSharp.RosBridgeClient.Messages.std_msgs;
+using std_srvs = RosSharp.RosBridgeClient.Services.std_srvs;
 using rosapi = RosSharp.RosBridgeClient.Services.RosApi;
 
 namespace RosSharp.RosBridgeClientTest

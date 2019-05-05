@@ -15,13 +15,13 @@ limitations under the License.
 
 using Newtonsoft.Json;
 
-namespace RosSharp.RosBridgeClient.Messages.Sensor
+namespace RosSharp.RosBridgeClient.Messages.sensor_msgs
 {
     public class PointCloud2 : Message
     {
         [JsonIgnore]
         public const string RosMessageName = "sensor_msgs/PointCloud2";
-        public Standard.Header header;
+        public std_msgs.Header header;
         public uint height;
         public uint width;
         public PointField[] fields;
@@ -33,7 +33,7 @@ namespace RosSharp.RosBridgeClient.Messages.Sensor
         public bool is_dense;
         public PointCloud2()
         {
-            header = new Standard.Header();
+            header = new std_msgs.Header();
             height = 0;
             width = 0;
             fields = new PointField[0];

@@ -15,7 +15,7 @@ limitations under the License.
 
 using Newtonsoft.Json;
 
-namespace RosSharp.RosBridgeClient.Services.Standard
+namespace RosSharp.RosBridgeClient.Services.std_srvs
 {
     public class TriggerRequest : Message
     {

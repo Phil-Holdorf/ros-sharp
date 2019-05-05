@@ -15,13 +15,13 @@ limitations under the License.
 
 using Newtonsoft.Json;
 
-namespace RosSharp.RosBridgeClient.Messages.Sensor
+namespace RosSharp.RosBridgeClient.Messages.sensor_msgs
 {
     public class JointState : Message
     {
         [JsonIgnore]
         public const string RosMessageName = "sensor_msgs/JointState";
-        public Standard.Header header;
+        public std_msgs.Header header;
         public string[] name;
         public double[] position;
         public double[] velocity;
@@ -29,7 +29,7 @@ namespace RosSharp.RosBridgeClient.Messages.Sensor
 
         public JointState()
         {
-            header = new Standard.Header();
+            header = new std_msgs.Header();
             name = new string[0];
             position = new double[0];
             velocity = new double[0];

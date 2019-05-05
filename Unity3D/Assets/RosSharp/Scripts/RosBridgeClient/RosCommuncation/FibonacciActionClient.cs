@@ -14,6 +14,7 @@ limitations under the License.
 */
 
 using RosSharp.RosBridgeClient.Messages;
+using RosSharp.RosBridgeClient.Messages.actionlib_tutorials;
 
 namespace RosSharp.RosBridgeClient
 {

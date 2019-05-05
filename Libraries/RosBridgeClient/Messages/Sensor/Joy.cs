@@ -15,19 +15,19 @@ limitations under the License.
 
 using Newtonsoft.Json;
 
-namespace RosSharp.RosBridgeClient.Messages.Sensor
+namespace RosSharp.RosBridgeClient.Messages.sensor_msgs
 {
     public class Joy : Message
     {
         [JsonIgnore]
         public const string RosMessageName = "sensor_msgs/Joy";
-        public Standard.Header header;
+        public std_msgs.Header header;
         public float[] axes;
         public int[] buttons;
 
         public Joy()
         {
-            header = new Standard.Header();
+            header = new std_msgs.Header();
             axes = new float[0];
             buttons = new int[0];
         }

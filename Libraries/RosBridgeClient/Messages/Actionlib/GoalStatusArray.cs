@@ -15,18 +15,18 @@ limitations under the License.
 
 using Newtonsoft.Json;
 
-namespace RosSharp.RosBridgeClient.Messages.Actionlib
+namespace RosSharp.RosBridgeClient.Messages.actionlib_msgs
 {
     public class GoalStatusArray : Message
     {
         [JsonIgnore]
         public const string RosMessageName = "actionlib_msgs/GoalStatusArray";
-        public Standard.Header header;
+        public std_msgs.Header header;
         public GoalStatus[] status_list;
 
         public GoalStatusArray()
         {
-            header = new Standard.Header();
+            header = new std_msgs.Header();
             status_list = new GoalStatus[] { new GoalStatus() };
         }
     }

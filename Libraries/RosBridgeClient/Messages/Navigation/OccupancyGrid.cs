@@ -15,18 +15,18 @@ limitations under the License.
 
 using Newtonsoft.Json;
 
-namespace RosSharp.RosBridgeClient.Messages.Navigation
+namespace RosSharp.RosBridgeClient.Messages.nav_msgs
 {
     public class OccupancyGrid : Message
     {
         [JsonIgnore]
         public const string RosMessageName = "nav_msgs/OccupancyGrid";
-        public Standard.Header header;
+        public std_msgs.Header header;
         public MapMetaData info;
         public sbyte[] data;
         public OccupancyGrid()
         {
-            header = new Standard.Header();
+            header = new std_msgs.Header();
             info = new MapMetaData();
             data = null;
         }

@@ -15,7 +15,7 @@ limitations under the License.
 
 using Newtonsoft.Json;
 
-namespace RosSharp.RosBridgeClient.Messages.Actionlib
+namespace RosSharp.RosBridgeClient.Messages.actionlib_msgs
 {
     public class GoalStatus : Message
     {

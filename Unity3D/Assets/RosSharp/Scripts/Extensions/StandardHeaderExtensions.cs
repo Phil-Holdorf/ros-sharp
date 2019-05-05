@@ -17,7 +17,7 @@ namespace RosSharp.RosBridgeClient
 {
     public static class HeaderExtensions
     {
-        public static void Update(this Messages.Standard.Header header)
+        public static void Update(this Messages.std_msgs.Header header)
         {
             float time = UnityEngine.Time.realtimeSinceStartup;
             uint secs = (uint)time;

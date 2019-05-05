@@ -30,11 +30,12 @@ namespace RosBridgeClient.Messages
 
                 outfile.WriteLine(
                     "using Newtonsoft.Json;\n" +
-                    "using RosSharp.RosBridgeClient.Messages.Geometry;\n" +
-                    "using RosSharp.RosBridgeClient.Messages.Navigation;\n" +
-                    "using RosSharp.RosBridgeClient.Messages.Sensor;\n" +
-                    "using RosSharp.RosBridgeClient.Messages.Standard;\n" +
-                    "using RosSharp.RosBridgeClient.Messages.Actionlib;\n\n" +
+                    "using RosSharp.RosBridgeClient.Messages.geometry_msgs;\n" +
+                    "using RosSharp.RosBridgeClient.Messages.nav_msgs;\n" +
+                    "using RosSharp.RosBridgeClient.Messages.sensor_msgs;\n" +
+                    "using RosSharp.RosBridgeClient.Messages.std_msgs;\n" +
+                    "using RosSharp.RosBridgeClient.Messages.actionlib_tutorial;\n" +
+                    "using RosSharp.RosBridgeClient.Messages.actionlib_msgs;\n\n" +
 
                     "namespace RosSharp.RosBridgeClient.Messages\n" +
                     "{\n" +
