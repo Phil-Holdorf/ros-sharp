@@ -21,10 +21,10 @@ namespace RosSharp.RosBridgeClient.Messages.geometry_msgs
     {
         [JsonIgnore]
         public const string RosMessageName = "geometry_msgs/Quaternion";
-        public float x;
-        public float y;
-        public float z;
-        public float w;
+        public double x;
+        public double y;
+        public double z;
+        public double w;
         public Quaternion()
         {
             x = 0;

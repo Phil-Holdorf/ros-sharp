@@ -85,7 +85,7 @@ namespace RosSharp.RosBridgeClient
 
         protected void PublishStatus()
         {
-            ActionStatus = new Messages.actionlib_msgs.GoalStatus() { status = (int)ActionState };
+            ActionStatus = new Messages.actionlib_msgs.GoalStatus() { status = (byte)ActionState };
 
             rosSocket.Publish(StatusPublicationId,
                 new Messages.actionlib_msgs.GoalStatusArray { status_list = new Messages.actionlib_msgs.GoalStatus[] { ActionStatus } });

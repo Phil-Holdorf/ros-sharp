@@ -43,7 +43,7 @@ namespace RosSharp.RosBridgeClient
 
         private static Vector3 ToVector3(Messages.geometry_msgs.Vector3 geometryVector3)
         {
-            return new Vector3(geometryVector3.x, geometryVector3.y, geometryVector3.z);
+            return new Vector3((float)geometryVector3.x, (float)geometryVector3.y, (float)geometryVector3.z);
         }
 
         private void Update()

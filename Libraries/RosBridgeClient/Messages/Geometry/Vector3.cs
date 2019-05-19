@@ -21,9 +21,9 @@ namespace RosSharp.RosBridgeClient.Messages.geometry_msgs
     {
         [JsonIgnore]
         public const string RosMessageName = "geometry_msgs/Vector3";
-        public float x;
-        public float y;
-        public float z;
+        public double x;
+        public double y;
+        public double z;
         public Vector3()
         {
             x = 0f;

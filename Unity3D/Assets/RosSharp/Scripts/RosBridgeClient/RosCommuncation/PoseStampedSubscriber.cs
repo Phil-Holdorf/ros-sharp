@@ -52,18 +52,18 @@ namespace RosSharp.RosBridgeClient
         private Vector3 GetPosition(Messages.geometry_msgs.PoseStamped message)
         {
             return new Vector3(
-                message.pose.position.x,
-                message.pose.position.y,
-                message.pose.position.z);
+                (float)message.pose.position.x,
+                (float)message.pose.position.y,
+                (float)message.pose.position.z);
         }
 
         private Quaternion GetRotation(Messages.geometry_msgs.PoseStamped message)
         {
             return new Quaternion(
-                message.pose.orientation.x,
-                message.pose.orientation.y,
-                message.pose.orientation.z,
-                message.pose.orientation.w);
+                (float)message.pose.orientation.x,
+                (float)message.pose.orientation.y,
+                (float)message.pose.orientation.z,
+                (float)message.pose.orientation.w);
         }
     }
 }

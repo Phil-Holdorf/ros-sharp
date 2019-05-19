@@ -22,7 +22,7 @@ namespace RosSharp.RosBridgeClient.Messages.actionlib_msgs
         [JsonIgnore]
         public const string RosMessageName = "actionlib_msgs/GoalStatus";
         public GoalID goal_id;
-        public int status;
+        public byte status;
         public string text;
 
         public GoalStatus()

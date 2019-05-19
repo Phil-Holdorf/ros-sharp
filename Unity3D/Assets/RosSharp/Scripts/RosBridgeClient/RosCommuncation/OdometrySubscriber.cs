@@ -51,18 +51,18 @@ namespace RosSharp.RosBridgeClient
         private Vector3 GetPosition(Messages.nav_msgs.Odometry message)
         {
             return new Vector3(
-                message.pose.pose.position.x,
-                message.pose.pose.position.y,
-                message.pose.pose.position.z);
+                (float)message.pose.pose.position.x,
+                (float)message.pose.pose.position.y,
+                (float)message.pose.pose.position.z);
         }
 
         private Quaternion GetRotation(Messages.nav_msgs.Odometry message)
         {
             return new Quaternion(
-                message.pose.pose.orientation.x,
-                message.pose.pose.orientation.y,
-                message.pose.pose.orientation.z,
-                message.pose.pose.orientation.w);
+                (float)message.pose.pose.orientation.x,
+                (float)message.pose.pose.orientation.y,
+                (float)message.pose.pose.orientation.z,
+                (float)message.pose.pose.orientation.w);
         }
     }
 }
